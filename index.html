@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1/8</title>
+    <link rel="stylesheet" href="./access/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header row">
+        <img src="./access/img/logo.png" alt="" class="logo" />
+
+        <img
+          src="./access/img/phone/Hambuger.svg"
+          alt=""
+          class="hambuger active"
+          id="hamburger"
+          onclick="menuInMobile()"
+        />
+
+        <nav class="navba" id="menu">
+          <ul class="nav__list row">
+            <li class="nav__item col"><a class="active" href="">Home</a></li>
+            <li class="nav__item col"><a href="#product">Product</a></li>
+            <li class="nav__item col"><a href="">Faq</a></li>
+            <li class="nav__item col"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero__content">
+          <h3 class="title-very-small">Food app</h3>
+          <h1 class="title-larger">
+            Why stay hungry when<br />you can order form Bella Onojie
+          </h1>
+          <p class="sub-title">Download the bella onoje's food app now on</p>
+          <a href="" class="btn btn--bg">Play Store</a>
+          <a href="" class="btn">App Store</a>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="head-feature">
+            <img src="./access/img/phone/Rectangle-1.png" alt="" />
+            <img src="./access/img/phone/Rectangle.png" alt="" />
+          </div>
+
+          <hr />
+
+          <div class="how-the-app-work">
+            <p class="title-small">How The App Work</p>
+            <div class="row content">
+              <img
+                src="./access/img/phone/Rectangle-2.png"
+                alt=""
+                class="col media"
+              />
+
+              <div class="col text">
+                <h3 class="title-very-small">Create an account</h3>
+                <h2 class="title-small">
+                  Login to an existing account to get started
+                </h2>
+                <p class="desc">
+                  An account is created with your email and a desired password
+                </p>
+              </div>
+            </div>
+            <div class="row content">
+              <div class="col text">
+                <h3 class="title-very-small">
+                  Shop for your favorite meal as a dey hot
+                </h3>
+                <h2 class="title-small">
+                  Login to an existing account to get started
+                </h2>
+                <p class="desc">
+                  Shop for your favorite meals or drinks and enjoy while doing
+                  it.
+                </p>
+              </div>
+
+              <img
+                src="./access/img/phone/phone2/Rectangle.png"
+                alt=""
+                class="col media"
+              />
+            </div>
+            <div class="row content">
+              <img
+                src="./access/img/phone/phone2/Rectangle-1.png"
+                alt=""
+                class="col media"
+              />
+
+              <div class="col text">
+                <h3 class="title-very-small">Checkout</h3>
+                <h2 class="title-small">
+                  When you done check out and get delivered
+                </h2>
+                <p class="desc">
+                  Shop for your favorite meals or drinks and enjoys while doing
+                  it
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="download" id="product">
+        <div class="download__content">
+          <p class="title-small">Download the app now</p>
+          <p class="desc">
+            Available on your favorite store. Start your premium experience now
+          </p>
+          <a href="" class="btn btn--bg">Play Store</a>
+          <a href="" class="btn">App Store</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row footer__content">
+            <img src="./access/img/logo.png" alt="" class="col logo" />
+            <ul class="col sci__list row">
+              <li class="sci__item col">
+                <a href=""
+                  ><img
+                    src="./access/img/phone/ant-design_facebook-filled.svg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="sci__item col">
+                <a href=""
+                  ><img
+                    src="./access/img/phone/ant-design_twitter-outlined.svg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="sci__item col">
+                <a href=""
+                  ><img src="./access/img/phone/instagram.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+
+            <p class="copyright">Copywright 2020 Bella Onojie.com</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      let hbg = document.getElementById("hamburger"),
+        menu = document.getElementById("menu");
+
+      window.addEventListener("scroll", function () {
+        if (menu.classList.contains("active")) {
+          menuInMobile();
+        }
+      });
+
+      function menuInMobile() {
+        menu.classList.toggle("active");
+        hbg.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
